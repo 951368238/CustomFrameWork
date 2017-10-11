@@ -1,0 +1,53 @@
+//
+//  PrefixHeader.pch
+//  Risklink
+//
+//  Created by 李想 on 2017/8/14.
+//  Copyright © 2017年 李想. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#ifdef __OBJC__ //  #ifdef __OBJC__ 和 #endif中的内容只会出现在OC源文件中
+
+
+#import "Header.h"
+#import "RLTabBarController.h"
+#import "RLNavigationController.h"
+
+
+#import "UIColor+HEX.h"
+#import "DateChange.h"
+#import "ScaleImage.h"
+#import "UIImageView+WebCache.h"
+#import "UIImage+Common.h"
+#import "NSObject+common.h"
+#import "NSString+JSONString.h"
+#import "UIView+Frame.h"
+
+#import <MJRefresh.h>
+#import <ReactiveCocoa.h>
+#import <YTKNetwork.h>
+#import <CoreMotion/CoreMotion.h>
+#import <objc/runtime.h>
+#import <Masonry.h>
+#import <IQKeyboardManager.h>
+#import <MBProgressHUD.h>
+#import <JSONModel.h>
+#import <AFNetworking.h>
+
+
+
+
+/**
+ *  自定义输出
+ */
+#ifdef DEBUG // 调试
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(...) // 发布
+#endif
+
+#endif
+
+#endif /* PrefixHeader_pch */
