@@ -23,7 +23,7 @@
 }
 +(NSDictionary*)DesjieMiWithData:(NSString*)string
 {
-    NSString*jiemihou=[DesUtilTow decrypt:string key:@"3abiz123453abiz123453abi"];
+    NSString*jiemihou=[DesUtilTow decrypt:string key:@""];
     NSData*data=[jiemihou dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary*dict=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
     return dict;
