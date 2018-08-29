@@ -13,7 +13,7 @@
 {
     NSData*data=[NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:nil];
     NSString*jsonStr=[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-    NSString *jiamihou=[DesUtilTow encrypt:jsonStr key:@"3abiz123453abiz123453abi"];
+    NSString *jiamihou=[DesUtilTow encrypt:jsonStr key:@""];
     NSLog(@"DES加密后的内容 = = = %@",jiamihou);
 //    NSString*finaStr=[jiamiNSstring stringWithSourceString:jiamihou];
 //    NSString * finaStr=[jiamiNSstring stingWithstring:jiamihou];
