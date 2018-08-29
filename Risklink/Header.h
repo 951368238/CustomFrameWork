@@ -113,9 +113,6 @@
  */
 #define scanCardUrl @""
 #define showHeadPathPrefix @""
-//#define showHeadPathPrefix @"http://180.169.17.83:8888/"
-//#define showHeadPathPrefix @"http://192.168.1.40:8888/"
-//#define showHeadPathPrefix @"http://180.169.17.83:8888/"
 //#define projectName @"/gugu"
 
 
